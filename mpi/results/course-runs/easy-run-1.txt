@@ -1,0 +1,46 @@
+Elaborazione completata in un totale di 1 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.050943 secondi
+Elaborazione completata in un totale di 2 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.026683 secondi
+Elaborazione completata in un totale di 3 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.018257 secondi
+Elaborazione completata in un totale di 4 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.014913 secondi
+Elaborazione completata in un totale di 5 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.011792 secondi
+Elaborazione completata in un totale di 6 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.010232 secondi
+Elaborazione completata in un totale di 7 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.009830 secondi
+Elaborazione completata in un totale di 8 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.010910 secondi
+Elaborazione completata in un totale di 9 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.010264 secondi
+Elaborazione completata in un totale di 10 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.010268 secondi
+Elaborazione completata in un totale di 11 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.010149 secondi
+Elaborazione completata in un totale di 12 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.009018 secondi
+Elaborazione completata in un totale di 13 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.008418 secondi
+Elaborazione completata in un totale di 14 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.007856 secondi
+Elaborazione completata in un totale di 15 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.007390 secondi
+Elaborazione completata in un totale di 16 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.007651 secondi
+Elaborazione completata in un totale di 17 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.007033 secondi
+Elaborazione completata in un totale di 18 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.007310 secondi
+Elaborazione completata in un totale di 19 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.006241 secondi
+Elaborazione completata in un totale di 20 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.006514 secondi
+Elaborazione completata in un totale di 60 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.005952 secondi
+Elaborazione completata in un totale di 120 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.005073 secondi
+Elaborazione completata in un totale di 240 processi.
+Media dei tempi massimi su 5 esecuzioni: 0.001995 secondi

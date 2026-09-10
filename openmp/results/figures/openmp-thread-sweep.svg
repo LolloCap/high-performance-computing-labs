@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="580" viewBox="0 0 980 580">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172033}.small{font-size:13px}.label{font-size:15px}.title{font-size:24px;font-weight:700}.subtitle{font-size:14px;fill:#526078}</style>
+<text x="92" y="34" class="title">OpenMP thread sweep</text>
+<text x="92" y="56" class="subtitle">Three course runs; lower elapsed time is better</text>
+<line x1="92" y1="498.00" x2="938" y2="498.00" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="503.00" text-anchor="end" class="small">0.00</text>
+<line x1="92" y1="444.75" x2="938" y2="444.75" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="449.75" text-anchor="end" class="small">0.01</text>
+<line x1="92" y1="391.50" x2="938" y2="391.50" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="396.50" text-anchor="end" class="small">0.02</text>
+<line x1="92" y1="338.25" x2="938" y2="338.25" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="343.25" text-anchor="end" class="small">0.03</text>
+<line x1="92" y1="285.00" x2="938" y2="285.00" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="290.00" text-anchor="end" class="small">0.04</text>
+<line x1="92" y1="231.75" x2="938" y2="231.75" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="236.75" text-anchor="end" class="small">0.05</text>
+<line x1="92" y1="178.50" x2="938" y2="178.50" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="183.50" text-anchor="end" class="small">0.06</text>
+<line x1="92" y1="125.25" x2="938" y2="125.25" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="130.25" text-anchor="end" class="small">0.07</text>
+<line x1="92" y1="72.00" x2="938" y2="72.00" stroke="#dce2ea" stroke-width="1"/>
+<text x="78" y="77.00" text-anchor="end" class="small">0.08</text>
+<line x1="92.00" y1="498" x2="92.00" y2="504" stroke="#172033"/>
+<text x="92.00" y="523" text-anchor="middle" class="small">1</text>
+<line x1="136.53" y1="498" x2="136.53" y2="504" stroke="#172033"/>
+<text x="136.53" y="523" text-anchor="middle" class="small">2</text>
+<line x1="181.05" y1="498" x2="181.05" y2="504" stroke="#172033"/>
+<line x1="225.58" y1="498" x2="225.58" y2="504" stroke="#172033"/>
+<text x="225.58" y="523" text-anchor="middle" class="small">4</text>
+<line x1="270.11" y1="498" x2="270.11" y2="504" stroke="#172033"/>
+<line x1="314.63" y1="498" x2="314.63" y2="504" stroke="#172033"/>
+<text x="314.63" y="523" text-anchor="middle" class="small">6</text>
+<line x1="359.16" y1="498" x2="359.16" y2="504" stroke="#172033"/>
+<line x1="403.68" y1="498" x2="403.68" y2="504" stroke="#172033"/>
+<text x="403.68" y="523" text-anchor="middle" class="small">8</text>
+<line x1="448.21" y1="498" x2="448.21" y2="504" stroke="#172033"/>
+<line x1="492.74" y1="498" x2="492.74" y2="504" stroke="#172033"/>
+<text x="492.74" y="523" text-anchor="middle" class="small">10</text>
+<line x1="537.26" y1="498" x2="537.26" y2="504" stroke="#172033"/>
+<line x1="581.79" y1="498" x2="581.79" y2="504" stroke="#172033"/>
+<text x="581.79" y="523" text-anchor="middle" class="small">12</text>
+<line x1="626.32" y1="498" x2="626.32" y2="504" stroke="#172033"/>
+<line x1="670.84" y1="498" x2="670.84" y2="504" stroke="#172033"/>
+<text x="670.84" y="523" text-anchor="middle" class="small">14</text>
+<line x1="715.37" y1="498" x2="715.37" y2="504" stroke="#172033"/>
+<line x1="759.89" y1="498" x2="759.89" y2="504" stroke="#172033"/>
+<text x="759.89" y="523" text-anchor="middle" class="small">16</text>
+<line x1="804.42" y1="498" x2="804.42" y2="504" stroke="#172033"/>
+<line x1="848.95" y1="498" x2="848.95" y2="504" stroke="#172033"/>
+<text x="848.95" y="523" text-anchor="middle" class="small">18</text>
+<line x1="893.47" y1="498" x2="893.47" y2="504" stroke="#172033"/>
+<line x1="938.00" y1="498" x2="938.00" y2="504" stroke="#172033"/>
+<text x="938.00" y="523" text-anchor="middle" class="small">20</text>
+<line x1="403.68" y1="72" x2="403.68" y2="498" stroke="#8793a6" stroke-width="1.2" stroke-dasharray="5 5"/>
+<text x="403.68" y="90" text-anchor="middle" class="small" fill="#526078">8 P-cores</text>
+<line x1="581.79" y1="72" x2="581.79" y2="498" stroke="#8793a6" stroke-width="1.2" stroke-dasharray="5 5"/>
+<text x="581.79" y="108" text-anchor="middle" class="small" fill="#526078">12 physical cores</text>
+<line x1="938.00" y1="72" x2="938.00" y2="498" stroke="#8793a6" stroke-width="1.2" stroke-dasharray="5 5"/>
+<text x="934.00" y="90" text-anchor="end" class="small" fill="#526078">20 logical threads</text>
+<polyline points="92.00,96.53 136.53,304.49 181.05,366.90 225.58,401.35 270.11,419.90 314.63,434.68 359.16,432.01 403.68,422.35 448.21,424.03 492.74,419.86 537.26,419.45 581.79,428.56 626.32,427.84 670.84,433.92 715.37,437.57 759.89,440.14 804.42,442.83 848.95,446.36 893.47,448.28 938.00,444.36" fill="none" stroke="#5b8ff9" stroke-width="1.8" opacity="0.72" stroke-linejoin="round"/>
+<polyline points="92.00,98.34 136.53,306.69 181.05,362.87 225.58,395.16 270.11,423.18 314.63,433.43 359.16,438.69 403.68,437.38 448.21,178.06 492.74,417.66 537.26,427.26 581.79,430.06 626.32,430.12 670.84,434.05 715.37,434.20 759.89,437.41 804.42,443.12 848.95,443.97 893.47,445.37 938.00,451.49" fill="none" stroke="#61b88a" stroke-width="1.8" opacity="0.72" stroke-linejoin="round"/>
+<polyline points="92.00,94.18 136.53,280.47 181.05,357.17 225.58,394.84 270.11,407.43 314.63,417.79 359.16,432.72 403.68,422.52 448.21,421.88 492.74,420.31 537.26,427.50 581.79,426.09 626.32,431.16 670.84,434.41 715.37,435.40 759.89,440.32 804.42,444.42 848.95,447.32 893.47,447.61 938.00,452.91" fill="none" stroke="#e8a33e" stroke-width="1.8" opacity="0.72" stroke-linejoin="round"/>
+<polyline points="92.00,96.35 136.53,297.22 181.05,362.31 225.58,397.12 270.11,416.84 314.63,428.63 359.16,434.47 403.68,427.42 448.21,341.33 492.74,419.28 537.26,424.74 581.79,428.23 626.32,429.70 670.84,434.13 715.37,435.72 759.89,439.29 804.42,443.45 848.95,445.88 893.47,447.09 938.00,449.59" fill="none" stroke="#172b4d" stroke-width="3.5" opacity="1.0" stroke-linejoin="round"/>
+<circle cx="92.00" cy="96.35" r="3.6" fill="#172b4d"><title>1 threads: 0.075427 s mean</title></circle>
+<circle cx="136.53" cy="297.22" r="3.6" fill="#172b4d"><title>2 threads: 0.037706 s mean</title></circle>
+<circle cx="181.05" cy="362.31" r="3.6" fill="#172b4d"><title>3 threads: 0.025481 s mean</title></circle>
+<circle cx="225.58" cy="397.12" r="3.6" fill="#172b4d"><title>4 threads: 0.018945 s mean</title></circle>
+<circle cx="270.11" cy="416.84" r="3.6" fill="#172b4d"><title>5 threads: 0.015242 s mean</title></circle>
+<circle cx="314.63" cy="428.63" r="3.6" fill="#172b4d"><title>6 threads: 0.013026 s mean</title></circle>
+<circle cx="359.16" cy="434.47" r="3.6" fill="#172b4d"><title>7 threads: 0.011930 s mean</title></circle>
+<circle cx="403.68" cy="427.42" r="3.6" fill="#172b4d"><title>8 threads: 0.013255 s mean</title></circle>
+<circle cx="448.21" cy="341.33" r="3.6" fill="#172b4d"><title>9 threads: 0.029422 s mean</title></circle>
+<circle cx="492.74" cy="419.28" r="3.6" fill="#172b4d"><title>10 threads: 0.014784 s mean</title></circle>
+<circle cx="537.26" cy="424.74" r="3.6" fill="#172b4d"><title>11 threads: 0.013759 s mean</title></circle>
+<circle cx="581.79" cy="428.23" r="3.6" fill="#172b4d"><title>12 threads: 0.013102 s mean</title></circle>
+<circle cx="626.32" cy="429.70" r="3.6" fill="#172b4d"><title>13 threads: 0.012826 s mean</title></circle>
+<circle cx="670.84" cy="434.13" r="3.6" fill="#172b4d"><title>14 threads: 0.011995 s mean</title></circle>
+<circle cx="715.37" cy="435.72" r="3.6" fill="#172b4d"><title>15 threads: 0.011696 s mean</title></circle>
+<circle cx="759.89" cy="439.29" r="3.6" fill="#172b4d"><title>16 threads: 0.011025 s mean</title></circle>
+<circle cx="804.42" cy="443.45" r="3.6" fill="#172b4d"><title>17 threads: 0.010243 s mean</title></circle>
+<circle cx="848.95" cy="445.88" r="3.6" fill="#172b4d"><title>18 threads: 0.009787 s mean</title></circle>
+<circle cx="893.47" cy="447.09" r="3.6" fill="#172b4d"><title>19 threads: 0.009561 s mean</title></circle>
+<circle cx="938.00" cy="449.59" r="3.6" fill="#172b4d"><title>20 threads: 0.009092 s mean</title></circle>
+<line x1="92" y1="498" x2="938" y2="498" stroke="#172033" stroke-width="1.5"/>
+<line x1="92" y1="72" x2="92" y2="498" stroke="#172033" stroke-width="1.5"/>
+<text x="515.00" y="552" text-anchor="middle" class="label">Requested OpenMP threads</text>
+<text x="24" y="285.00" text-anchor="middle" class="label" transform="rotate(-90 24 285.00)">Mean elapsed time per configuration (s)</text>
+<line x1="512" y1="526" x2="536" y2="526" stroke="#5b8ff9" stroke-width="3"/>
+<text x="543" y="531" class="small">Series 1</text>
+<line x1="612" y1="526" x2="636" y2="526" stroke="#61b88a" stroke-width="3"/>
+<text x="643" y="531" class="small">Series 2</text>
+<line x1="712" y1="526" x2="736" y2="526" stroke="#e8a33e" stroke-width="3"/>
+<text x="743" y="531" class="small">Series 3</text>
+<line x1="812" y1="526" x2="836" y2="526" stroke="#172b4d" stroke-width="3"/>
+<text x="843" y="531" class="small">Mean</text>
+</svg>

@@ -1,0 +1,27 @@
+Benchmark con 100000000 operazioni...
+
+Threads:   1 | Tempo medio: 0.075834 secondi
+Threads:   2 | Tempo medio: 0.040851 secondi
+Threads:   3 | Tempo medio: 0.026447 secondi
+Threads:   4 | Tempo medio: 0.019372 secondi
+Threads:   5 | Tempo medio: 0.017009 secondi
+Threads:   6 | Tempo medio: 0.015063 secondi
+Threads:   7 | Tempo medio: 0.012260 secondi
+Threads:   8 | Tempo medio: 0.014175 secondi
+Threads:   9 | Tempo medio: 0.014294 secondi
+Threads:  10 | Tempo medio: 0.014589 secondi
+Threads:  11 | Tempo medio: 0.013240 secondi
+Threads:  12 | Tempo medio: 0.013505 secondi
+Threads:  13 | Tempo medio: 0.012553 secondi
+Threads:  14 | Tempo medio: 0.011941 secondi
+Threads:  15 | Tempo medio: 0.011756 secondi
+Threads:  16 | Tempo medio: 0.010831 secondi
+Threads:  17 | Tempo medio: 0.010062 secondi
+Threads:  18 | Tempo medio: 0.009518 secondi
+Threads:  19 | Tempo medio: 0.009462 secondi
+Threads:  20 | Tempo medio: 0.008468 secondi
+
+--- Test Overhead ---
+Threads:  60 | Tempo medio: 0.009758 secondi
+Threads: 120 | Tempo medio: 0.009324 secondi
+Threads: 240 | Tempo medio: 0.008829 secondi

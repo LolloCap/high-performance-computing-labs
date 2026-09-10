@@ -1,0 +1,25 @@
+# Build outputs
+build/
+out/
+bin/
+__pycache__/
+*.pyc
+*.exe
+*.obj
+*.o
+*.pdb
+
+# IDE files
+.vs/
+.vscode/
+*.sln
+*.vcxproj*
+
+# Local and private source material
+original-materials/
+private/
+*.msi
+
+# Operating-system files
+.DS_Store
+Thumbs.db

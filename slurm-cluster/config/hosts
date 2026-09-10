@@ -1,0 +1,7 @@
+127.0.0.1 localhost
+127.0.1.1 CURRENT_HOSTNAME
+
+192.168.10.10 controller
+192.168.10.11 worker1
+192.168.10.12 worker2
+192.168.10.13 worker3
