@@ -24,9 +24,26 @@ The benchmark ran on an Intel Core i7-12700. Its hybrid topology matters when in
 
 The second laboratory implements the same general workload with independent MPI processes. Each process receives a portion of the iteration range, while the root process records the maximum elapsed time across the workers. The experiments include both a lightweight multiplication and a more expensive mathematical workload.
 
-![Logical CPU utilization during an MPI execution](mpi/evidence/task-manager/Esecuzione_Completa.png)
+```mermaid
+flowchart LR
+    M["mpiexec -n N"] --> R0["Rank 0"]
+    M --> R1["Rank 1"]
+    M --> R2["Rank 2"]
+    M --> RN["Rank N−1"]
 
-*Windows Task Manager shows how the MPI processes are distributed across the 20 logical processors during a complete execution.*
+    R0 --> B["MPI_Barrier"]
+    R1 --> B
+    R2 --> B
+    RN --> B
+
+    B --> W["Parallel workload<br/>one iteration range per rank"]
+    W --> T["MPI_Reduce<br/>maximum elapsed time"]
+    W --> C["MPI_Reduce<br/>checksum"]
+    T --> O["Rank 0 writes the CSV result"]
+    C --> O
+```
+
+*`mpiexec` launches independent ranks, which synchronize before processing their assigned ranges. Rank 0 collects the maximum elapsed time and checksum.*
 
 [Open the MPI laboratory](mpi/README.md)
 
