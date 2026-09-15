@@ -24,6 +24,10 @@ The benchmark ran on an Intel Core i7-12700. Its hybrid topology matters when in
 
 The second laboratory implements the same general workload with independent MPI processes. Each process receives a portion of the iteration range, while the root process records the maximum elapsed time across the workers. The experiments include both a lightweight multiplication and a more expensive mathematical workload.
 
+![Logical CPU utilization during an MPI execution](mpi/evidence/task-manager/Esecuzione_Completa.png)
+
+*Windows Task Manager shows how the MPI processes are distributed across the 20 logical processors during a complete execution.*
+
 [Open the MPI laboratory](mpi/README.md)
 
 ## Laboratory 3 Slurm cluster
@@ -36,6 +40,10 @@ worker1     192.168.10.11  compute node
 worker2     192.168.10.12  compute node
 worker3     192.168.10.13  additional compute node
 ```
+
+![Controller, three workers and Sview](slurm-cluster/evidence/multi-terminal-cluster-overview.png)
+
+*The final environment combines the Sview node overview with active `slurmd` services on all three workers.*
 
 [Open the Slurm cluster laboratory](slurm-cluster/README.md)
 

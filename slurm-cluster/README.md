@@ -28,33 +28,65 @@ The core task initially used `controller`, `worker1` and `worker2`. The professo
 
 ## Deployment procedure
 
-1. Create the controller and worker virtual machines with Ubuntu Server 24.04 LTS.
-2. Give each VM a NAT adapter for internet access and an internal adapter for cluster traffic.
-3. Configure static internal addresses and consistent `/etc/hosts` entries.
-4. Install OpenSSH and verify key-based connections between nodes.
-5. Export `/nfs` from the controller and mount it persistently on the workers.
-6. Install Munge, distribute one shared `munge.key`, and validate cross-node credentials.
-7. Install Slurm, run `slurmctld` on the controller and `slurmd` on each worker.
-8. Check node state with `sinfo` and the Sview graphical interface.
-9. Add `worker3` by cloning a worker, changing its hostname and address, and updating the shared configuration.
+### 1. Virtual machines and private network
 
-## Configuration examples
+The controller and workers run Ubuntu Server 24.04 LTS in VirtualBox. Every VM has a NAT adapter for package installation and an internal `intnet` adapter dedicated to cluster traffic.
+
+![VirtualBox internal network adapter](evidence/virtualbox-controller-network-internal.png)
+
+*Adapter 2 connects the controller to the isolated VirtualBox network named `intnet`.*
+
+Static addresses from `192.168.10.10` to `192.168.10.13` provide predictable node identities. Matching `/etc/hosts` entries allow the machines to communicate through the names `controller`, `worker1`, `worker2`, and `worker3`.
+
+![Worker network configuration and hosts file](evidence/worker1-network-and-hosts.png)
+
+*The `worker1` terminal verifies its `192.168.10.11/24` address and the complete four-node host map.*
+
+### 2. Remote access and shared storage
+
+OpenSSH provides administrative access between the nodes. Connectivity is tested from the controller before the distributed services are configured.
+
+![SSH connection from the controller to worker1](evidence/ssh-connectivity.png)
+
+*A successful SSH session confirms hostname resolution and connectivity between the controller and `worker1`.*
+
+The controller exports `/nfs`, and every worker mounts the same directory. A file created on the controller is therefore immediately visible from a compute node.
+
+![Shared NFS file visible on controller and worker2](evidence/nfs-shared-file.png)
+
+*`Hola.txt` appears in `/nfs` on both machines, validating the shared filesystem.*
+
+### 3. Authentication and Slurm services
+
+Munge signs and validates credentials exchanged by Slurm. All nodes use the same protected `munge.key`; the service status and an encode/decode test confirm that authentication works.
+
+![Munge status and credential test](evidence/munge-status-and-test.png)
+
+*The credential pipeline reports `STATUS: Success (0)`, and `munge.service` is active.*
+
+Slurm runs `slurmctld` on the controller and `slurmd` on each worker. The service capture verifies that all four daemons are active at the same time.
+
+![Slurm services running across the cluster](evidence/slurm-services-running.png)
+
+*The controller daemon and the three compute-node daemons report `active (running)`.*
+
+### 4. Cluster validation
+
+The node state is checked with `sinfo` and the Sview graphical interface. The final view displays `worker1`, `worker2`, and `worker3`, each configured with one virtual CPU.
+
+![Three compute nodes visible in Sview](evidence/multi-terminal-cluster-overview.png)
+
+*Sview lists all three workers while the accompanying terminals show their running `slurmd` services.*
+
+The final functional test uses `srun -N3 hostname` to request execution across all three compute nodes.
+
+## Configuration files
 
 The files under `config/` document the addressing, host mapping, netplan setup, and Slurm node definition used in the laboratory. They are focused examples rather than a complete automated deployment or a drop-in production configuration.
 
-## Validation
+## Additional evidence
 
-The final screenshots show:
-
-- the internal address and host map on `worker1`;
-- active `slurmctld` and `slurmd` services;
-- a Slurm node expression covering `worker1`, `worker2` and `worker3`;
-- the three compute nodes visible in Sview;
-- the command `srun -N3 hostname` used as the final multi-node test.
-
-The screenshots are organized under `evidence/` with descriptive filenames.
-
-![Final Slurm services running across the cluster](evidence/slurm-services-running.png)
+The evidence directory also documents the VirtualBox CPU, memory, disk and NAT settings, the Slurm node definition, and the final multi-node command. Every screenshot has a descriptive filename and an explanation in the index.
 
 [Browse the evidence index](evidence/README.md)
 
